@@ -68,9 +68,11 @@ export default function Home() {
             Our Services
           </Typography.Title>
           <Features
-            gridColumns={2}
+            gridColumns={3}
             variant='card'
             features={dataSite.services}
+            backgroundColor={'#CFE5BAFF'}
+            borderRadius={50}
           />
         </div>
         <div id='courses'>
@@ -110,11 +112,11 @@ export default function Home() {
               autoPlay: false,
               direction: 'horizontal',
             }}
-            variantItem='card'
-            variant='grid'
+            variantItem='text'
+            variant='carousel'
             backgroundColor='#CFE5BAFF'
             references={dataSite.references}
-            gridColumns={3}
+            gridColumns={1}
             titleAlign='center'
           />
         </div>
